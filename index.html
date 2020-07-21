@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小江个人博客-一个文艺女</title>
+		<meta name="Keywords" content=" - 个人网站，小江个人博客,小江网站，小江博客,个人原创网站，小江" >
+		<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
+		<meta name="Description" itemprop="description" content=" - 小江个人博客，是一个文艺女个人网站，分享个人作品和生活,值得大家收藏的原创博客网站。" >
+		<meta itemprop="name" content=" - 小江个人博客，是一个文艺女个人网站，分享个人作品和生活,值得大家收藏的原创博客网站。" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+	<div class="music">
+		<i><img src="images/musicplay.png" autoplay class="play"></i>
+		<audio autoplay="autoplay" src="纯音乐 - 雾里看花 - 古筝版铃声 (铃声).mp3" type="audio/mp3" loop>
+		</audio>
+		<script>
+			$(".music").click(function(){
+				$(".music img").toggleClass("play");//音乐图标是否动
+				//判断音乐是否播放,播放就停止,若没播放就播放
+				if(!$(".music audio")[0].paused){
+					$(".music audio")[0].pause();
+				}else{
+					$(".music audio")[0].play();
+				}
+			})
+		</script>
+	</div>
+	<!--回到顶部-->
+	<a href="javascript:;" class="toTop"><img src="images/toTop.png"></a>
+	<script src="js/public.js"></script>
+		<header>
+			<div class="head_top">
+				<div class="head_top_r">
+					<a href="index.html">home</a> <a href="about.html">关于我们</a>
+				</div>
+			</div>
+				<div class="div_logo"></div>
+				<div class="nav">
+				<nav>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="note.html">心情随笔</a></li>
+					<li><a href="memory.html">韶华追忆</a></li>
+					<li><a href="works.html">个人作品</a></li>
+					<li><a href="blog.html">Blog留言</a></li>
+					<li><a href="about.html">关于我</a></li>
+				</nav>
+				</div>
+			</div>
+		</header>
+		<div class="warp">
+			<article class="main_l">
+				<div class="banner">
+					<div class="flexslider">
+						<ul class="slides" style=" background-image: url(images/banner-1.jpg); background-repeat: no-repeat;">
+							<li class="on">
+								<img src="images/banner-1.jpg">
+							</li>
+							<li>
+								<img src="images/banner-2.gif">
+							</li>
+							<li>
+								<img src="images/banner-3.jpg">
+							</li>
+							<li>
+								<img src="images/banner-4.gif">
+							</li>
+						</ul>
+			<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+			<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.flexslider').flexslider({
+						directionNav: true,
+						pauseOnAction: false
+					});
+				});
+			</script>
+						<!--<ul class="slide-f-active">
+							<li class="active"></li><li></li><li></li><li></li>
+						</ul>-->
+					</div>
+					<div class="slide-r">
+						<ul>
+							<li>
+								<h4>关于博主</h4>
+								<p>个人资料：女，九零后，幼师，狮子座，爱好：写文字、涂鸦</p>
+							</li>
+							<li>
+								<h4>关于博主</h4>
+								<p>个人资料：女，九零后，幼师，狮子座，爱好：写文字、涂鸦</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--最新作品-->
+				<div class="news_works">
+					<h3 class="news_works_title">最新作品</h3>
+					<ul class="news_works_ul">
+						<li>
+							<figure>
+							<a href="works_info.html"><img src="images/person_1.jpg"></a></figure>
+							<div class="news_work_txt">
+								<h4 class="news_work_txt_name">祝我生日快乐</h4>
+								<p class="news_work_txt_p">祝我生日快乐，祝我生日快乐哦！生日快乐歌唱完，该许愿啦！每年得六月二十八我都是在外面漂着，有多少年没在家过过生日了。
+									爸妈总是说多想给你做一顿丰盛的生日餐，看着你吃就觉得幸福。可是这样的机会少之又少，突然就伤感的不行。爸妈总是说多想给你做一顿丰盛的生日餐，
+									看着你吃就觉得幸福。可是这样的机会少之又少，突然就伤感的不行。爸妈总是说多想给你做一顿丰盛的生日餐，看着你吃就觉得幸福。可是这样的机会少之又少，突然就伤感的不行。
+									</p><a href="works_info.html" class="news_work_txt_link">详情</a>
+								<p><span class="classic">个人作品</span> <span class="time">2017.08.29 </span></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<!--<script src="js/banner.js"></script>-->
+			<article class="main_r">
+				<h3>关注我</h3>
+				<ul class="focuse">
+					<li>
+						<a href="#"><img src="images/ico_05_1.jpg"></a>
+						<p>新浪微博</p>
+					</li>
+					<li>
+						<a href="#"><img src="images/ico_07_1.jpg"></a>
+						<p>邮箱</p>
+					</li>
+				</ul>
+				<h3>最新作品</h3>
+				<ul class="main_works">
+					<li><a href="works_info.html">祝我生日快乐</a></li>
+				</ul>
+			</article>
+		</div>
+		<div class="footer">
+			<div class="footer-nav">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="note.html">心情随笔</a></li>
+					<li><a href="memory.html">韶华追忆</a></li>
+					<li><a href="works.html">个人作品</a></li>
+					<li><a href="blog.html">Blog留言</a></li>
+					<li><a href="about.html">关于我</a></li>
+				</ul>
+			</div>
+			<p class="footer-bottom">Copyright © 2017  <span>小江个人博客</span> <span></span></p>
+		</div>
+	</body>
+</html>

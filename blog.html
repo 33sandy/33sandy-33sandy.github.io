@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小江个人博客-一个文艺女</title>
+		<meta name="Keywords" content=" - 个人网站，小江个人博客,小江网站，小江博客,个人原创网站，小江" >
+		<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
+		<meta name="Description" itemprop="description" content=" - 小江个人博客，是一个文艺女个人网站，分享个人作品和生活,值得大家收藏的原创博客网站。" >
+		<meta itemprop="name" content=" - 小江个人博客，是一个文艺女个人网站，分享个人作品和生活,值得大家收藏的原创博客网站。" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+			<!--回到顶部-->
+	<a href="javascript:;" class="toTop"><img src="images/toTop.png"></a>
+	<script src="js/public.js"></script>
+		<header>
+			<div class="head_top">
+				<div class="head_top_r">
+					<a href="index.html">home</a> <a href="about.html">关于我们</a>
+				</div>
+			</div>
+				<div class="div_logo"></div>
+				<div class="nav">
+				<nav>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="note.html">心情随笔</a></li>
+					<li><a href="memory.html">韶华追忆</a></li>
+					<li><a href="works.html">个人作品</a></li>
+					<li><a href="blog.html">Blog留言</a></li>
+					<li><a href="about.html">关于我</a></li>
+				</nav>
+				</div>
+			</div>
+		</header>
+		<div class="warp">
+			<article class="main_l">				
+				<!--韶华追忆-->
+				<div class="note">
+					<div class="news_works_title">
+					<h3 class="news_works_h3">Blog留言</h3>
+					<p class="news_works_p"><a href="index.html">返回首页</a>>></p>
+					</div>
+					<div class="blog">
+						<form>
+						<p><label for="username">姓名</label> <input id="username" type="text" placeholder="请输入您的姓名"></p>
+						<p><label for="tel">电话</label> <input id="tel" type="text" placeholder="请输入您的电话（选填）"></p>
+						<p><label for="email">邮箱</label> <input id="email" type="email" placeholder="请输入您的邮箱（选填）"></p>
+						<textarea placeholder="留言内容"></textarea>
+						<input type="submit" class="submit" />
+						</form>
+					</div>
+					<script>		
+						$(".submit").click(function(){				
+							if($("#username").val()==" "){
+								alert("姓名或电话不能为空！");
+								return false;
+							}
+							var reg=/^1[3|4|5|7|8][0-9]{9}$/
+							console.log($("#tel").val())
+							if(!$("#tel").val()){
+							if(reg.test($("#tel").val())){
+									alert("手机格式不对");
+									return false;
+								}
+							}
+							var	reg=/ ^[A-Za-zd]A-Za-zd]+)*@([A-Za-zd]A-Za-zd]{2,5}$/
+							if(!$("#email").val()){
+								if(reg.test($("#email").val())){
+								alert("邮箱格式不对");
+								return false;
+								}	
+							}
+							
+							alert("提交成功，感谢您的留言！");
+							
+						})
+					</script>
+				</div>
+			</article>
+			<article class="main_r">
+				<h3>关注我</h3>
+				<ul class="main_r_nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="note.html">心情随笔</a></li>
+					<li><a href="memory.html">韶华追忆</a></li>
+					<li><a href="works.html">个人作品</a></li>
+					<li><a href="blog.html">Blog留言</a></li>
+					<li><a href="about.html">关于我</a></li>
+				</ul>
+				<h3>最新作品</h3>
+				<ul class="main_works">
+					<li><a href="works_info.html">祝我生日快乐</a></li>
+				</ul>
+				
+			</article>
+		</div>
+	</body>
+</html>
